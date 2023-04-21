@@ -1,0 +1,280 @@
+body {
+  user-select: none;
+}
+
+.container {
+  position: relative;
+  left: 0;
+  top: 7em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: #000000d0;
+  height: 12.5em;
+  width: 40em;
+  margin: 0 0 2em 1em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20px #00000080;
+}
+
+.image {
+  background: white;
+  width: 14em;
+  height: 11em;
+  margin: 12px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-left {
+  font-family: sans-serif;
+  position: relative;
+  width: 20em;
+}
+
+.line {
+  width: 140%;
+  position: relative;
+  top: 0.5em;
+}
+
+hr {
+  width: 95%;
+}
+
+h3 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.main-left .name,
+.main-left .price {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.929);
+  cursor: default;
+  position: relative;
+  width: 150%;
+}
+
+.name {
+  top: 0em;
+}
+
+.price {
+  top: 0.5em;
+}
+
+.main-left .sisa {
+  background: #0bc655;
+  color: white;
+  width: 10em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: default;
+  position: relative;
+}
+
+.qty {
+  display: flex;
+  position: relative;
+  bottom: -3.7em;
+  left: -1em;
+}
+
+.qty input {
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #0bc655;
+  color: white;
+}
+
+.qty button {
+  cursor: pointer;
+  padding: 0;
+  height: 3em;
+  background: transparent;
+  border: none;
+}
+
+.result {
+  background-color: white;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.259);
+  border-radius: 15px;
+  height: 19.4em;
+  width: 30%;
+  position: fixed;
+  top: 7em;
+  right: 3em;
+  font: 17px sans-serif;
+}
+
+.result p {
+  margin: 1.5em 0 1em 2em;
+}
+
+.label {
+  display: flex;
+  margin-left: 2em;
+}
+
+.discount {
+  margin-left: 9.5em;
+}
+
+.total {
+  margin-left: 11em;
+}
+
+.delivery {
+  margin-left: 5.9em;
+}
+
+.amount {
+  margin-left: 6.2em;
+}
+
+.pay {
+  position: relative;
+  height: 3em;
+  width: 100%;
+  background: #0bc655;
+  color: #f3f3f3;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.pay::before {
+  content: "";
+  position: absolute;
+  background: #171717;
+  width: 37em;
+  height: 5em;
+  border-radius: 50px;
+  top: -1em;
+  left: -38em;
+  z-index: -1;
+}
+
+.pay:hover {
+  color: #0bc655;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.pay:hover::before {
+  left: -1em;
+  transition: 0.7s;
+}
+
+@media only screen and (max-width: 1150px) {
+  .discount {
+    margin-left: 5.3em;
+  }
+
+  .total {
+    margin-left: 7em;
+  }
+
+  .delivery {
+    margin-left: 1.9em;
+  }
+
+  .amount {
+    margin-left: 2.2em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 34em;
+  }
+  .qty svg, .qty input{
+    width: 2em;
+    height: 2em;
+  }
+  .main-left .sisa {
+    position: absolute;
+    background: transparent;
+    color: transparent;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .result {
+    top: 45em;
+    left: 0;
+    width: 100%;
+    height: 13em;
+    border-radius: 0;
+    font-size: 12px;
+  }
+
+  .result p {
+    margin: 1em 0 0.5em 1.5em;
+  }
+
+  .label {
+    margin: -0.8em 0 0 1.5em;
+  }
+
+  .pay {
+    border-radius: 0;
+    height: 4em;
+  }
+  .pay::before {
+    width: 49em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .card {
+    width: 28.5em;
+    margin-left: 7px;
+  }
+  .responsive {
+    position: relative;
+    width: 100%;
+    height: 2em;
+    margin-top: 18em;
+    z-index: -1;
+    background-color: red;
+  }
+  .line {
+    width: 200%;
+  }
+  .main-left .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 10em;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -1em;
+  }
+  .pay::before {
+    width: 39em;
+  }
+  .pay:hover::before {
+    left: -0.8em;
+  }
+}

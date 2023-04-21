@@ -1,0 +1,210 @@
+:root {
+  user-select: none;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 6em;
+  margin-inline: 10em;
+}
+
+.main-L {
+  width: 30em;
+  height: 35em;
+  border-radius: 10px;
+}
+
+.image {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.299);
+  width: 100%;
+  height: 25em;
+  border-radius: 10px;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opt-1 {
+  width: 6em;
+  height: 6em;
+  margin-inline: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #0000004c;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.main-R {
+  width: 30em;
+  height: 35em;
+  position: relative;
+}
+
+.category {
+  font: 600 20px sans-serif;
+  color: #0bc655;
+  margin: 3em 0 0 0;
+}
+
+.name {
+  font: 600 40px sans-serif;
+  margin: 0 0 1em 0;
+}
+
+.description {
+  font: 13px sans-serif;
+  color: rgb(121, 121, 121);
+  margin: 0 0 2em 0;
+}
+
+.amount {
+  display: flex;
+}
+
+.price {
+  font: 600 25px sans-serif;
+}
+
+.discount {
+  position: relative;
+  color: #07a245;
+  background: #c5ffdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.7em;
+  height: 1.5em;
+  border-radius: 3px;
+  font: 15px sans-serif;
+  margin: -5px 0 0 0.3em;
+}
+
+.button-group {
+  margin-top: 2em;
+}
+
+.button {
+  display: flex;
+}
+
+.chat, .cart {
+  width: 17em;
+  height: 3em;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  margin-inline: 5px;
+  cursor: pointer;
+}
+.chat {
+  background: #000000d0;
+}
+.chat:hover {
+  box-shadow: 0 0 15px black;
+  transition: 0.2s;
+  color: #dedede;
+}
+
+.cart {
+  background-color: #0bc655;
+}
+.cart:hover {
+  box-shadow: 0 0 15px rgb(1, 255, 1);
+  transition: 0.2s;
+  color: #dedede;
+}
+
+@media only screen and (max-width: 950px) {
+  .container {
+    display: block;
+    margin-inline: 3em;
+  }
+  .button {
+    display: block;
+  }
+  .chat, .cart {
+    width: 35em;
+    margin-bottom: 0.5em;
+  }
+  .logo span svg {
+    width: 0;
+  }
+  .logo label {
+    font-size: 15px;
+    width: 60%;
+    margin-left: -7em;
+  }
+  .menu {
+    margin-right: -3.5em;
+  }
+  .image {
+    width: 90%;
+    height: 22em;
+    margin-left: 1em;
+  }
+  .category {
+    margin-top: -2em;
+  }
+  .description {
+    margin-top: -2em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    display: block;
+    margin-inline: 0;
+  }
+  .button {
+    margin-left: -0.3em;
+  }
+  .menu svg{
+    width: 20px;
+    margin-inline: 7px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .image {
+    width: 74%;
+    height: 20em;
+  }
+  .opt-1 {
+    width: 4.5em;
+    height: 4.5em;
+    margin-inline: 9px;
+  }
+  .slide {
+    width: 24em;
+  }
+  .category {
+    width: 13em;
+  }
+  .name {
+    width: 9.5em;
+  }
+  .description {
+    width: 25em;
+  }
+  .button-group {
+    width: 24em;
+    display: flex;
+    margin-top: 1em;
+  }
+  body {
+    width: 10em;
+  }
+
+}

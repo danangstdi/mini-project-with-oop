@@ -1,0 +1,106 @@
+nav {
+  background: #000000d0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 5em;
+}
+
+.logo {
+  color: white;
+  font: 28px sans-serif;
+  margin-left: 3em;
+  letter-spacing: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  margin-right: 8px;
+}
+
+.logo a {
+  margin: 0 4em 0 -1em;
+}
+
+.menu {
+  position: absolute;
+  right: 7em;
+}
+.menu a{
+  margin-inline: 1em;
+  text-decoration: none;
+}
+.sign-in {
+  margin-right: -2.7em;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  right: -2.5em;
+}
+
+.select {
+  cursor: pointer;
+}
+
+.menu-section {
+  list-style: none;
+  padding: 0;
+  background: #323741;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.2);
+  opacity: 0;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7em;
+  color: white;
+}
+/*js*/
+.menu-open {
+  opacity: 1;
+  display: block;
+}
+.menu-section li {
+  padding: 12px 6px;
+  margin: 8px;
+  margin-block: -10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font: 12px sans-serif;
+}
+
+.menu-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-section li:hover {
+  background: #2a2f35;
+}
+
+@media only screen and (max-width: 800px) {
+  .logo span svg {
+    width: 0;
+  }
+  .logo label {
+    font-size: 15px;
+    width: 50%;
+    margin-left: -7em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .menu svg{
+    width: 20px;
+    margin-inline: -10px;
+  }
+  
+}

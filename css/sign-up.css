@@ -1,0 +1,122 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(241, 241, 241);
+  user-select: none;
+}
+
+.container {
+  background: #000000d0;
+  width: 28em;
+  height: 31em;
+  border-radius: 20px;
+}
+.container-1 {
+  background: #000000d0;
+  width: 28em;
+  height: 25em;
+  border-radius: 20px;
+}
+
+.head {
+  display: flex;
+}
+
+.head h1 {
+  color: #05c977;
+  font-family: sans-serif;
+  margin: 1.2em 2.2em;
+  letter-spacing: 6px;
+}
+
+.head svg {
+  border-bottom: 4px solid #05c977;
+  border-right: 4px solid #05c977;
+  border-bottom-right-radius: 30px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.username {
+  display: flex;
+}
+
+.username svg, .password svg, .password-confirm svg{
+  background: #05c977;
+}
+
+.username input, .password input, .password-confirm input {
+  width: 25em;
+  height: 2.5.6em;
+  text-indent: 15px;
+  outline: none;
+  background: #deffeb;
+  border-bottom-right-radius: 15px;
+  border: none;
+}
+
+.password {
+  display: flex;
+}
+
+.password-confirm {
+  display: flex;
+}
+
+button {
+  width: 84%;
+  height: 3em;
+  border: none;
+  border-radius: 20px 5px;
+  cursor: pointer;
+  background: #05c977;
+  position: relative;
+  color: #ffffffed;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  height: 15em;
+  width: 40em;
+  background-color: white;
+  bottom: 2em;
+  left: -35em;
+  border-radius: 100px;
+  z-index: -1;
+  transition: 1s ease;
+}
+
+button:hover {
+  color: black;
+  z-index: 1;
+  transition: 0.7s;
+}
+
+button:hover::before {
+  bottom: -2em;
+  left: -5em;
+}
+
+.link {
+  margin-top: 1em;
+}
+label {
+  color: white;
+  font: 12px sans-serif;
+}
+
+.link a {
+  text-decoration: none;
+  color: #05c977;
+  font: 12px sans-serif;
+}
