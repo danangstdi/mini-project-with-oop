@@ -7,7 +7,8 @@ require_once 'component/card.php';
 
 $db = new CreateDb();
 
-//Fitur Logout
+
+//fitur login
 if( isset($_POST["btn"]) ) {
   
   $username = $_POST["username"];
@@ -18,7 +19,7 @@ if( isset($_POST["btn"]) ) {
   if( mysqli_num_rows($result) === 1 ) {
     $row = mysqli_fetch_assoc($result);
     
-    //cek kesamaan password pada inputan dan database menggunakan built-in function password_verify()
+    //cek kesamaan password pada inputan dan database yang telah ter-hash menggunakan built-in function password_verify()
     if( password_verify($password, $row["password"]) ) {
       $_SESSION["login"] = true;
       echo "<script>
