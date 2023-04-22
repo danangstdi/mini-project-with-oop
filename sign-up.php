@@ -13,7 +13,7 @@ require_once 'component/card.php';
 $db = new CreateDb();
 
 if( isset($_POST["btn"]) ) {
-
+  //memanggil public function regist() untuk fitur registrasi
   if( $db->regist($_POST) > 0 ) {
     echo "<script>
             alert('Your registration has been successful');
