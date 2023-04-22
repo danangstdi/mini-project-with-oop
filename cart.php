@@ -21,7 +21,7 @@ require_once 'component/header.php';
 $db = new CreateDb();
 $rows = $db->getData($_POST);
 
-//fitur delete
+//fitur delete produk yang ada didalam keranjang
 if (isset($_POST['delete'])){
   if ($_GET['action'] == 'delete'){
       foreach ($_SESSION['cart'] as $key => $value){
