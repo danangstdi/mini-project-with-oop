@@ -9,7 +9,7 @@ require_once 'component/header.php';
 $db = new CreateDb();
 $rows = $db->getData($_POST);
 
-//Masukkan kedalam Cart
+//Fitur menambahkan produk kedalam keranjang belanja
 if (isset($_POST['add'])){
 
   if(isset($_SESSION['cart'])) {
