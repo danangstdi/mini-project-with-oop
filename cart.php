@@ -4,7 +4,7 @@ session_start();
 
 if (!isset($_SESSION["login"])) {
   echo "<script>
-          var confirm = confirm('Anda belum login, login untuk melanjutkan');
+          var confirm = confirm('You are not logged in, please login to continue');
           if (confirm == true) {
             document.location.href ='sign-in.php';
           }else {
