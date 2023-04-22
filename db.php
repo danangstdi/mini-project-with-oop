@@ -27,6 +27,7 @@ class CreateDb {
 
  public function regist($sql) {
 
+  //data diambil dari value element dengan masing-masing attribute name yang diinputkan oleh user melalui menu sign-up
   $yourName = stripcslashes($sql["your-name"]);
   $username = stripcslashes($sql["username"]);
   $password = mysqli_real_escape_string($this->con, $sql["password"]);
