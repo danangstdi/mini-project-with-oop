@@ -44,3 +44,5 @@ Fitur :
 4. Add to cart / Masukkan kedalam keranjang (sedikit bug)
 5. Hash / Enkripsi password pada Database
 ```
+
+#Folder Tugas Lain berisikan source code uji coba code list-data dan code array seperti perintah pada file pdf pertemuan ke-5 dan tidak berhubungan dengan mini-project
